@@ -1,0 +1,548 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Oct 18 12:05:17 2022
+# Process ID: 11576
+# Current directory: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9348 C:\Users\yigit\Desktop\Okul\2022 güz\Sayýsal sistem tasarým uygulamalarý\sstu_odevler\sstu_odev1\sstu_odev1.xpr
+# Log file: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/vivado.log
+# Journal file: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 738.895 ; gain = 114.090
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Tue Oct 18 12:05:56 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/synth_1/runme.log
+[Tue Oct 18 12:05:56 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/impl_1/runme.log
+set_property part xc7a50ticsg324-1L [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Oct 18 12:08:06 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/synth_1/runme.log
+close_project
+create_project odev1 {C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1} -part xc7a50ticsg324-1L
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+add_files -norecurse {{C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/Top_Module.v} {C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v}}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Tue Oct 18 12:09:39 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Tue Oct 18 12:09:58 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.runs/impl_1/runme.log
+add_files -fileset constrs_1 -norecurse {{C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new/Top_Module_tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Oct 18 12:11:55 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.runs/synth_1/runme.log
+[Tue Oct 18 12:11:55 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a50ticsg324-1L
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1154.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1336.988 ; gain = 421.414
+close_design
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1822.375 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1822.375 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1822.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property top AND_gate [current_fileset]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Top_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Top_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_gate
+INFO: [VRFC 10-311] analyzing module OR_gate
+INFO: [VRFC 10-311] analyzing module NOT_gate
+INFO: [VRFC 10-311] analyzing module NAND_gate
+INFO: [VRFC 10-311] analyzing module NOR_gate
+INFO: [VRFC 10-311] analyzing module EXOR_gate
+INFO: [VRFC 10-311] analyzing module EXNOR_gate
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/Top_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new/Top_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_Module_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f4ff3d1973c6441ca0d450308207ee2c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_Module_tb_behav xil_defaultlib.Top_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AND_gate
+Compiling module xil_defaultlib.OR_gate
+Compiling module xil_defaultlib.NOT_gate
+Compiling module xil_defaultlib.NAND_gate
+Compiling module xil_defaultlib.NOR_gate
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.EXOR_gate
+Compiling module xil_defaultlib.EXNOR_gate
+Compiling module xil_defaultlib.TRI
+Compiling module xil_defaultlib.Top_Module
+Compiling module xil_defaultlib.Top_Module_tb
+Compiling module xil_defaultlib.glbl
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Built simulation snapshot Top_Module_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/yigit/Desktop/Okul/2022 -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/Users/yigit/Desktop/Okul/2022" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 18 12:54:48 2022...
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Oct 18 12:54:53 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a50ticsg324-1L
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'IN[0]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[1]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[2]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[3]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[4]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[5]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[6]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[7]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[8]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[9]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[10]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[11]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[12]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[13]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[14]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[0]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[1]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[2]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[3]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[4]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[5]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[6]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[7]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1903.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Top_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Top_Module_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f4ff3d1973c6441ca0d450308207ee2c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_Module_tb_behav xil_defaultlib.Top_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Top_Module_tb_behav -key {Behavioral:sim_1:Functional:Top_Module_tb} -tclbatch {Top_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Top_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1947.328 ; gain = 18.277
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Top_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Top_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_gate
+INFO: [VRFC 10-311] analyzing module OR_gate
+INFO: [VRFC 10-311] analyzing module NOT_gate
+INFO: [VRFC 10-311] analyzing module NAND_gate
+INFO: [VRFC 10-311] analyzing module NOR_gate
+INFO: [VRFC 10-311] analyzing module EXOR_gate
+INFO: [VRFC 10-311] analyzing module EXNOR_gate
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/Top_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new/Top_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f4ff3d1973c6441ca0d450308207ee2c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_Module_tb_behav xil_defaultlib.Top_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AND_gate
+Compiling module xil_defaultlib.OR_gate
+Compiling module xil_defaultlib.NOT_gate
+Compiling module xil_defaultlib.NAND_gate
+Compiling module xil_defaultlib.NOR_gate
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.EXOR_gate
+Compiling module xil_defaultlib.EXNOR_gate
+Compiling module xil_defaultlib.TRI
+Compiling module xil_defaultlib.Top_Module
+Compiling module xil_defaultlib.Top_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Top_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Top_Module_tb_behav -key {Behavioral:sim_1:Functional:Top_Module_tb} -tclbatch {Top_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Top_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Top_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Top_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_gate
+INFO: [VRFC 10-311] analyzing module OR_gate
+INFO: [VRFC 10-311] analyzing module NOT_gate
+INFO: [VRFC 10-311] analyzing module NAND_gate
+INFO: [VRFC 10-311] analyzing module NOR_gate
+INFO: [VRFC 10-311] analyzing module EXOR_gate
+INFO: [VRFC 10-311] analyzing module EXNOR_gate
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/Top_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new/Top_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f4ff3d1973c6441ca0d450308207ee2c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_Module_tb_behav xil_defaultlib.Top_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 15 for port 'IN' [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new/Top_Module_tb.v:6]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'OUT' [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new/Top_Module_tb.v:7]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AND_gate
+Compiling module xil_defaultlib.OR_gate
+Compiling module xil_defaultlib.NOT_gate
+Compiling module xil_defaultlib.NAND_gate
+Compiling module xil_defaultlib.NOR_gate
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.EXOR_gate
+Compiling module xil_defaultlib.EXNOR_gate
+Compiling module xil_defaultlib.TRI
+Compiling module xil_defaultlib.Top_Module
+Compiling module xil_defaultlib.Top_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Top_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Top_Module_tb_behav -key {Behavioral:sim_1:Functional:Top_Module_tb} -tclbatch {Top_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Top_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_runs impl_1 -jobs 8
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2449.441 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2449.441 ; gain = 0.000
+[Tue Oct 18 13:21:41 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1/odev1.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2449.441 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2449.441 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2449.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a50ticsg324-1L
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'IN[0]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[1]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[2]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[3]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[4]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[5]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[6]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[7]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[8]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[9]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[10]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[11]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[12]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[13]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IN[14]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[0]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[1]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[2]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[3]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[4]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[5]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[6]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OUT[7]'. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2540.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a50ticsg324-1L
+Top: AND_gate
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2540.992 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AND_gate' [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AND_gate' (1#1) [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:4]

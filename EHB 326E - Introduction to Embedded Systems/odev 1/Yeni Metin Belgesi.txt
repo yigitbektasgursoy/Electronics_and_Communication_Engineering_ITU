@@ -1,0 +1,29 @@
+In this assignment, the student is required to repeat what has been done in the video given in the link below and to report the results obtained.
+
+ 
+
+https://www.youtube.com/watch?v=jXNJ1sYsnmo&feature=emb_title
+
+ 
+
+The following steps must be follow
+
+- download required documents and install applications,
+
+- using FEDEx IDE, test example code (toplama) and debug your program and checking registers values using the IDE be sure that program works correctly,
+
+- after checking that example works on simulation, generate the output file of the code in the form of .vhd file,
+
+- combining Picoblaze (kcpsm6) with the file produced (BRAM0) on Vivado, 
+
+- show that the program works correctly on Vidado, provide timing diagram and iteration time for single execution,
+
+- prepare a report that  proves that you can repeat it for a program that is coded by you !
+
+ 
+
+Desired achievements with this assignment:
+
+1. Basic usage of Vivado (How to download and install Vivado: https://web.itu.edu.tr/yalcinmust/EHB326/Vivado_Download_and_Installation.pdf)
+
+2. Understanding of Tool flow for Picoblaze 6 with Fidex IDE

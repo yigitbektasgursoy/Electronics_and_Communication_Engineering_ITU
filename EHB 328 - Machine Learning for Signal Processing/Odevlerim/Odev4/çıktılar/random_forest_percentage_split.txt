@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     weather
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances           4               80      %
+Kappa statistic                          0.5455
+Mean absolute error                      0.3741
+Root mean squared error                  0.4   
+Relative absolute error                 79.133  %
+Root relative squared error             81.4215 %
+Total Number of Instances                5     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,500    0,750      1,000    0,857      0,612    1,000     1,000     yes
+                 0,500    0,000    1,000      0,500    0,667      0,612    1,000     1,000     no
+Weighted Avg.    0,800    0,300    0,850      0,800    0,781      0,612    1,000     1,000     
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 3 0 | a = yes
+ 1 1 | b = no

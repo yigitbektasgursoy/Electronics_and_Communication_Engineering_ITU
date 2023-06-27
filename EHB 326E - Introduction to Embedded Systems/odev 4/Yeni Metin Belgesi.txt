@@ -1,0 +1,30 @@
+Ödev Açıklaması
+Do a research and explain the Call/Return Stack and Interrupts in Picoblaze.
+
+Using Fidex, write an assembly code including nested interrupts (interrupt calling interrupts). Perform nested interrupts by an I/O port.
+
+1- Write 10 nested interrupts and show that Program Counter (PC) returns the initial instruction address (first callee) after 10 returns.
+
+2- Write 32 nested interrupts and observe the consequences.
+
+Connect an I/O port to the interrupt input and implement your design in Vivado. An example top module and a simulation file is provided (out_port(7) is connected to interrupt input). 
+
+Make a simulation and show your results in the time diagram. Include address (PC), interrupt enable and interrupt objects in the time diagram.
+
+ 
+
+Include your report:
+
+- Explanation of Call/Return Stack and Interrupts,
+
+- Assembly Code and Explanation,
+
+- Simulation results in Vivado for both cases,
+
+- Make comments about the results you obtained.
+
+ 
+
+Useful Resource:
+
+Picoblaze User Guide

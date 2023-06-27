@@ -1,0 +1,45 @@
+
+*** Running vivado
+    with args -log Top_Module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_Module.tcl -notrace
+Command: synth_design -top Top_Module -part xc7a50ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20592 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 364.125 ; gain = 101.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Module' [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/Top_Module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AND_gate' [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AND_gate' (1#1) [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:4]
+INFO: [Synth 8-6157] synthesizing module 'OR_gate' [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'OR_gate' (2#1) [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:13]
+INFO: [Synth 8-6157] synthesizing module 'NOT_gate' [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'NOT_gate' (3#1) [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:22]
+INFO: [Synth 8-6157] synthesizing module 'NAND_gate' [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'NAND_gate' (4#1) [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:30]
+INFO: [Synth 8-6157] synthesizing module 'NOR_gate' [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'NOR_gate' (5#1) [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:42]
+INFO: [Synth 8-6157] synthesizing module 'EXOR_gate' [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
+	Parameter INIT bound to: 4'b0110 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (6#1) [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
+INFO: [Synth 8-6155] done synthesizing module 'EXOR_gate' (7#1) [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:53]
+INFO: [Synth 8-6157] synthesizing module 'EXNOR_gate' [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:69]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
+	Parameter INIT bound to: 4'b1001 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (7#1) [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
+INFO: [Synth 8-6155] done synthesizing module 'EXNOR_gate' (8#1) [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:69]
+INFO: [Synth 8-6157] synthesizing module 'TRI' [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'TRI' (9#1) [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Module' (10#1) [C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/Top_Module.v:1]
+TclStackFree: incorrect freePtr. Call out of sequence?

@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Oct 18 00:05:05 2022
+# Process ID: 12604
+# Current directory: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20536 C:\Users\yigit\Desktop\Okul\2022 güz\Sayýsal sistem tasarým uygulamalarý\sstu_odevler\sstu_odev1\sstu_odev1.xpr
+# Log file: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/vivado.log
+# Journal file: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1'
+INFO: [Project 1-313] Project file moved from 'C:/Users/yigit/Desktop/sstu_odev1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 725.594 ; gain = 75.906
+update_compile_order -fileset sources_1
+file mkdir C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new
+file mkdir C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new
+file mkdir C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new
+file mkdir C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new
+file mkdir C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new
+file mkdir {C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new}
+close [ open {C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new/Top_Module_tb.v} w ]
+add_files -fileset sim_1 {{C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new/Top_Module_tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_runs impl_1 -jobs 8
+[Tue Oct 18 00:31:18 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/synth_1/runme.log
+[Tue Oct 18 00:31:18 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Tue Oct 18 00:32:58 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/synth_1/runme.log
+[Tue Oct 18 00:32:58 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Tue Oct 18 00:34:46 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/synth_1/runme.log
+[Tue Oct 18 00:34:46 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Tue Oct 18 00:36:06 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/synth_1/runme.log
+[Tue Oct 18 00:36:06 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Oct 18 00:36:33 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Tue Oct 18 00:37:59 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/synth_1/runme.log
+[Tue Oct 18 00:37:59 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 18 00:39:23 2022...

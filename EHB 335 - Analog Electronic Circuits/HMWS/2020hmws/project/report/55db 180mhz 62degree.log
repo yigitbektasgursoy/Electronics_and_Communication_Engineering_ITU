@@ -1,0 +1,55 @@
+http transferring http://ptm.asu.edu/modelcard/180nm_bulk.txt to E:\OKUL\20-21 Guz Donemi\ANALOG ELE\HMWS\2020hmws\project\report\180nm_bulk.txt
+Circuit: * E:\OKUL\20-21 Guz Donemi\ANALOG ELE\HMWS\2020hmws\project\report\55db 180mhz 62degree.asc
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter LDIF
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter CTA
+Ignoring BSIM parameter CTP
+Ignoring BSIM parameter PTA
+Ignoring BSIM parameter PTP
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter CTA
+Ignoring BSIM parameter CTP
+Ignoring BSIM parameter PTA
+Ignoring BSIM parameter PTP
+Error on line 53 : .model pmos pmos level = 49 lint = 3.e-08 tox = 4.2e-09 vth0 = -0.42 rdsw = 450 lmin=1.8e-7 lmax=1.8e-7 wmin=1.8e-7 wmax=1.0e-4 tref=27.0 version =3.1 xj= 7.0000000e-08 nch= 5.9200000e+17 lln= 1.0000000 lwn= 1.0000000 wln= 0.00 wwn= 0.00 ll= 0.00 lw= 0.00 lwl= 0.00 wint= 0.00 wl= 0.00 ww= 0.00 wwl= 0.00 mobmod= 1 binunit= 2 xl= 0.00 xw= 0.00 binflag= 0 dwg= 0.00 dwb= 0.00 acm= 0 ldif=0.00 hdif=0.00 rsh= 0 rd= 0 rs= 0 rsc= 0 rdc= 0 k1= 0.5560000 k2= 0.00 k3= 0.00 dvt0= 11.2000000 dvt1= 0.7200000 dvt2= -1.0000000e-02 dvt0w= 0.00 dvt1w= 0.00 dvt2w= 0.00 nlx= 9.5000000e-08 w0= 0.00 k3b= 0.00 ngate= 5.0000000e+20 vsat= 1.0500000e+05 ua= -1.2000000e-10 ub= 1.0000000e-18 uc= -2.9999999e-11 prwb= 0.00 prwg= 0.00 wr= 1.0000000 u0= 8.0000000e-03 a0= 2.1199999 keta= 2.9999999e-02 a1= 0.00 a2= 0.4000000 ags= -0.1000000 b0= 0.00 b1= 0.00 voff= -6.40000000e-02 nfactor= 1.4000000 cit= 0.00 cdsc= 0.00 cdscb= 0.00 cdscd= 0.00 eta0= 8.5000000 etab= 0.00 dsub= 2.8000000 pclm= 2.0000000 pdiblc1= 0.1200000 pdiblc2= 8.0000000e-05 pdiblcb= 0.1450000 drout= 5.0000000e-02 pscbe1= 1.0000000e-20 pscbe2= 1.0000000e-20 pvag= -6.0000000e-02 delta= 1.0000000e-02 alpha0= 0.00 beta0= 30.0000000 kt1= -0.3700000 kt2= -4.0000000e-02 at= 5.5000000e+04 ute= -1.4800000 ua1= 9.5829000e-10 ub1= -3.3473000e-19 uc1= 0.00 kt1l= 4.0000000e-09 prt= 0.00 cj= 0.00138 mj= 1.05 pb= 1.24 cjsw= 1.44e-09 mjsw= 0.43 php= 0.841 cta= 0.00093 ctp= 0 pta= 0.00153 ptp= 0 js=1.50e-08 jsw=2.50e-13 n=1.0 xti=3.0 cgdo=2.786e-10 cgso=2.786e-10 cgbo=0.0e+00 capmod= 2 nqsmod= 0 elm= 5 xpart= 1 cgsl= 1.6e-10 cgdl= 1.6e-10 ckappa= 2.886 cf= 1.058e-10 clc= 0.0000001 cle= 0.6 dlc= 3e-08 dwc= 0 vfbcv= -1
+	* Unrecognized parameter "binflag" -- ignored
+	* Unrecognized parameter "rsc" -- ignored
+	* Unrecognized parameter "rdc" -- ignored
+Error on line 1084 : .model nmos nmos level = 49 lint = 4.e-08 tox = 4.e-09 vth0 = 0.3999 rdsw = 250 lmin=1.8e-7 lmax=1.8e-7 wmin=1.8e-7 wmax=1.0e-4 tref=27.0 version =3.1 xj= 6.0000000e-08 nch= 5.9500000e+17 lln= 1.0000000 lwn= 1.0000000 wln= 0.00 wwn= 0.00 ll= 0.00 lw= 0.00 lwl= 0.00 wint= 0.00 wl= 0.00 ww= 0.00 wwl= 0.00 mobmod= 1 binunit= 2 xl= 0 xw= 0 binflag= 0 dwg= 0.00 dwb= 0.00 k1= 0.5613000 k2= 1.0000000e-02 k3= 0.00 dvt0= 8.0000000 dvt1= 0.7500000 dvt2= 8.0000000e-03 dvt0w= 0.00 dvt1w= 0.00 dvt2w= 0.00 nlx= 1.6500000e-07 w0= 0.00 k3b= 0.00 ngate= 5.0000000e+20 vsat= 1.3800000e+05 ua= -7.0000000e-10 ub= 3.5000000e-18 uc= -5.2500000e-11 prwb= 0.00 prwg= 0.00 wr= 1.0000000 u0= 3.5000000e-02 a0= 1.1000000 keta= 4.0000000e-02 a1= 0.00 a2= 1.0000000 ags= -1.0000000e-02 b0= 0.00 b1= 0.00 voff= -0.12350000 nfactor= 0.9000000 cit= 0.00 cdsc= 0.00 cdscb= 0.00 cdscd= 0.00 eta0= 0.2200000 etab= 0.00 dsub= 0.8000000 pclm= 5.0000000e-02 pdiblc1= 1.2000000e-02 pdiblc2= 7.5000000e-03 pdiblcb= -1.3500000e-02 drout= 1.7999999e-02 pscbe1= 8.6600000e+08 pscbe2= 1.0000000e-20 pvag= -0.2800000 delta= 1.0000000e-02 alpha0= 0.00 beta0= 30.0000000 kt1= -0.3700000 kt2= -4.0000000e-02 at= 5.5000000e+04 ute= -1.4800000 ua1= 9.5829000e-10 ub1= -3.3473000e-19 uc1= 0.00 kt1l= 4.0000000e-09 prt= 0.00 cj= 0.00365 mj= 0.54 pb= 0.982 cjsw= 7.9e-10 mjsw= 0.31 php= 0.841 cta= 0 ctp= 0 pta= 0 ptp= 0 js=1.50e-08 jsw=2.50e-13 n=1.0 xti=3.0 cgdo=2.786e-10 cgso=2.786e-10 cgbo=0.0e+00 capmod= 2 nqsmod= 0 elm= 5 xpart= 1 cgsl= 1.6e-10 cgdl= 1.6e-10 ckappa= 2.886 cf= 1.069e-10 clc= 0.0000001 cle= 0.6 dlc= 4e-08 dwc= 0 vfbcv= -1
+	* Unrecognized parameter "binflag" -- ignored
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat Jan 23 13:55:51 2021
+Total elapsed time: 5.317 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 160139
+traniter = 160124
+tranpoints = 80058
+accept = 80046
+rejected = 12
+matrix size = 9
+fillins = 0
+solver = Normal
+Matrix Compiler1: 1.09 KB object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 879 bytes object code size  0.1/0.1/[0.1]
+

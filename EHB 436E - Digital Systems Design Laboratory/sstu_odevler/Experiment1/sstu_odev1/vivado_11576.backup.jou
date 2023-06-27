@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Oct 18 12:05:17 2022
+# Process ID: 11576
+# Current directory: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9348 C:\Users\yigit\Desktop\Okul\2022 güz\Sayýsal sistem tasarým uygulamalarý\sstu_odevler\sstu_odev1\sstu_odev1.xpr
+# Log file: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/vivado.log
+# Journal file: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+set_property part xc7a50ticsg324-1L [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_project
+create_project odev1 {C:/Users/yigit/Desktop/Okul/2022 gz/Saysal sistem tasarm uygulamalar/sstu_odevler/odev1} -part xc7a50ticsg324-1L
+add_files -norecurse {{C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/Top_Module.v} {C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sources_1/new/SSI_Library.v}}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+add_files -fileset constrs_1 -norecurse {{C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/Nexys-4-DDR-Master.xdc}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/sstu_odev1/sstu_odev1.srcs/sim_1/new/Top_Module_tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top AND_gate [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_simulation
+source Top_Module_tb.tcl
+close_sim
+launch_simulation
+source Top_Module_tb.tcl
+close_sim
+launch_simulation
+source Top_Module_tb.tcl
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design
+open_run impl_1
+open_run synth_1 -name synth_1
+close_design
+synth_design -rtl -name rtl_1

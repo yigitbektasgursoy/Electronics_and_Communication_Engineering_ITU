@@ -1,0 +1,12 @@
+Ödev Açıklaması
+ 
+
+Using IP generator, create two single port RAM (RAM1 and RAM2) and connect them a PicoBlaze processor.
+
+Fill  Scratchpad RAM with the number start with last two digit of your student ID(Student ID: 4xxx0245, then 45h to 55h). Write the Scratchpad RAM's values to RAM1 starting the address which is 5th and 6th digit of your student ID (02h) and then copy from RAM1 to RAM2 starting the address which is last two digit of your student ID (45h) .
+
+Resources which might help:
+
+https://web.itu.edu.tr/yalcinmust/EHB326/ders_9_2.pdf
+
+https://web.itu.edu.tr/yalcinmust/EHB326/write_bram_hw2.pdf

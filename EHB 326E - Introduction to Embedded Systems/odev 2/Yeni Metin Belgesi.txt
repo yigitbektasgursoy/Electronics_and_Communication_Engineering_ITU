@@ -1,0 +1,18 @@
+Ödev Açıklaması
+In this homework assignment, write the program which is defined for you in the list
+
+https://web.itu.edu.tr/yalcinmust/EHB326/sw_hw_2021.pdf 
+
+using Picoblaze assembly and test on Fidex IDE.
+
+You are expected to upload a working code  to the Ninova system and a report describing your study.
+
+Sample report from previous years (Thanks to Elif Öztürk): https://web.itu.edu.tr/yalcinmust/EHB326/leetcode_338.pdf
+
+ 
+
+PS: 
+
+1. If you thought that the assigment is hard to code, you can pick-up a differnt on from  the LeetCode (https://leetcode.com/problemset/all/) web page (difficulty level must be Medium and it must be not in our assignment list.)
+
+2. Since the resources on Picoblaze are limited, you are expected to write the defined problem in a way that makes maximum use of the resources you have. 

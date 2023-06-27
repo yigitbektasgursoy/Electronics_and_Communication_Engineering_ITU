@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Oct 17 14:16:44 2022
+# Process ID: 23540
+# Current directory: C:/Users/yigit/Desktop/sstu_odev1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1968 C:\Users\yigit\Desktop\sstu_odev1\sstu_odev1.xpr
+# Log file: C:/Users/yigit/Desktop/sstu_odev1/vivado.log
+# Journal file: C:/Users/yigit/Desktop/sstu_odev1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yigit/Desktop/sstu_odev1/sstu_odev1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 757.668 ; gain = 100.832
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 17 14:28:07 2022...

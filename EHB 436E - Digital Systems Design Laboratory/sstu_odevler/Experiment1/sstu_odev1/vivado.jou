@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Oct 24 17:49:35 2022
+# Process ID: 2608
+# Current directory: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/Experiment1/sstu_odev1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12544 C:\Users\yigit\Desktop\Okul\2022 güz\Sayýsal sistem tasarým uygulamalarý\sstu_odevler\Experiment1\sstu_odev1\sstu_odev1.xpr
+# Log file: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/Experiment1/sstu_odev1/vivado.log
+# Journal file: C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/Experiment1/sstu_odev1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yigit/Desktop/Okul/2022 güz/Sayýsal sistem tasarým uygulamalarý/sstu_odevler/Experiment1/sstu_odev1/sstu_odev1.xpr}
+update_compile_order -fileset sources_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]

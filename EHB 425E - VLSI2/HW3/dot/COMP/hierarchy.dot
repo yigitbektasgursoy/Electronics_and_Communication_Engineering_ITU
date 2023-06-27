@@ -1,0 +1,34 @@
+digraph "COMP2" {
+label="COMP2";
+rankdir="LR";
+remincross=true;
+n3 [ shape=diamond, label="fa_sum1", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="SUM", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="CARRY", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="Cout", color="black", fontcolor="black" ];
+n7 [ shape=octagon, label="Cin", color="black", fontcolor="black" ];
+n8 [ shape=octagon, label="X4", color="black", fontcolor="black" ];
+n9 [ shape=octagon, label="X3", color="black", fontcolor="black" ];
+n10 [ shape=octagon, label="X2", color="black", fontcolor="black" ];
+n11 [ shape=octagon, label="X1", color="black", fontcolor="black" ];
+c12 [ shape=record, label="{{<p7> Cin|<p11> X1|<p10> X2|<p9> X3}|FA2\nFULL_ADDER_32|{<p6> Cout|<p4> SUM}}" ];
+c13 [ shape=record, label="{{<p7> Cin|<p11> X1|<p10> X2|<p9> X3}|FA1\nFULL_ADDER_32|{<p6> Cout|<p4> SUM}}" ];
+v0 [ label="0" ];
+x1 [shape=box, style=rounded, label="BUF"];
+v2 [ label="0" ];
+x3 [shape=box, style=rounded, label="BUF"];
+x3:e:e -> c12:p7:w [color="black", style="setlinewidth(3)", label=""];
+n10:e -> c13:p10:w [color="black", style="setlinewidth(3)", label=""];
+n11:e -> c13:p11:w [color="black", style="setlinewidth(3)", label=""];
+x1:e:e -> c13:p7:w [color="black", style="setlinewidth(3)", label=""];
+c13:p4:e -> n3:w [color="black", style="setlinewidth(3)", label=""];
+n3:e -> c12:p10:w [color="black", style="setlinewidth(3)", label=""];
+c12:p4:e -> n4:w [color="black", style="setlinewidth(3)", label=""];
+c12:p6:e -> n5:w [color="black", style="setlinewidth(3)", label=""];
+c13:p6:e -> n6:w [color="black", style="setlinewidth(3)", label=""];
+n7:e -> c12:p11:w [color="black", style="setlinewidth(3)", label=""];
+n8:e -> c12:p9:w [color="black", style="setlinewidth(3)", label=""];
+n9:e -> c13:p9:w [color="black", style="setlinewidth(3)", label=""];
+v0:e -> x1:w:w [color="black", style="setlinewidth(3)", label=""];
+v2:e -> x3:w:w [color="black", style="setlinewidth(3)", label=""];
+}
