@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="appear" val="center"/>
+    </tool>
+    <tool name="Pin">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Probe">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Clock">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Constant">
+      <a name="facing" val="west"/>
+      <a name="value" val="0x0"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="left"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <lib desc="file#../logi7400dip.circ" name="7"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="left"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(340,270)" to="(400,270)"/>
+    <wire from="(120,150)" to="(120,220)"/>
+    <wire from="(100,380)" to="(220,380)"/>
+    <wire from="(200,100)" to="(200,110)"/>
+    <wire from="(300,200)" to="(350,200)"/>
+    <wire from="(200,140)" to="(320,140)"/>
+    <wire from="(250,390)" to="(370,390)"/>
+    <wire from="(210,350)" to="(260,350)"/>
+    <wire from="(230,130)" to="(280,130)"/>
+    <wire from="(190,230)" to="(190,370)"/>
+    <wire from="(230,130)" to="(230,270)"/>
+    <wire from="(260,200)" to="(260,350)"/>
+    <wire from="(180,200)" to="(180,220)"/>
+    <wire from="(240,100)" to="(240,120)"/>
+    <wire from="(180,390)" to="(220,390)"/>
+    <wire from="(280,100)" to="(280,130)"/>
+    <wire from="(180,260)" to="(180,290)"/>
+    <wire from="(170,270)" to="(200,270)"/>
+    <wire from="(190,370)" to="(220,370)"/>
+    <wire from="(100,200)" to="(130,200)"/>
+    <wire from="(370,230)" to="(370,390)"/>
+    <wire from="(180,290)" to="(180,390)"/>
+    <wire from="(290,220)" to="(310,220)"/>
+    <wire from="(370,120)" to="(370,230)"/>
+    <wire from="(320,100)" to="(320,140)"/>
+    <wire from="(120,270)" to="(140,270)"/>
+    <wire from="(200,410)" to="(220,410)"/>
+    <wire from="(340,260)" to="(350,260)"/>
+    <wire from="(340,220)" to="(350,220)"/>
+    <wire from="(120,220)" to="(120,270)"/>
+    <wire from="(130,250)" to="(140,250)"/>
+    <wire from="(170,290)" to="(180,290)"/>
+    <wire from="(190,230)" to="(200,230)"/>
+    <wire from="(100,200)" to="(100,380)"/>
+    <wire from="(300,200)" to="(300,250)"/>
+    <wire from="(240,120)" to="(370,120)"/>
+    <wire from="(290,150)" to="(290,220)"/>
+    <wire from="(210,350)" to="(210,420)"/>
+    <wire from="(180,390)" to="(180,400)"/>
+    <wire from="(130,200)" to="(180,200)"/>
+    <wire from="(200,270)" to="(200,410)"/>
+    <wire from="(350,200)" to="(350,220)"/>
+    <wire from="(120,130)" to="(120,150)"/>
+    <wire from="(120,150)" to="(290,150)"/>
+    <wire from="(250,400)" to="(350,400)"/>
+    <wire from="(60,380)" to="(100,380)"/>
+    <wire from="(200,140)" to="(200,230)"/>
+    <wire from="(180,400)" to="(220,400)"/>
+    <wire from="(260,350)" to="(260,380)"/>
+    <wire from="(350,260)" to="(350,290)"/>
+    <wire from="(260,200)" to="(300,200)"/>
+    <wire from="(200,270)" to="(230,270)"/>
+    <wire from="(400,110)" to="(400,270)"/>
+    <wire from="(340,230)" to="(370,230)"/>
+    <wire from="(290,270)" to="(310,270)"/>
+    <wire from="(350,290)" to="(350,400)"/>
+    <wire from="(120,220)" to="(140,220)"/>
+    <wire from="(170,230)" to="(190,230)"/>
+    <wire from="(130,200)" to="(130,250)"/>
+    <wire from="(300,250)" to="(310,250)"/>
+    <wire from="(340,290)" to="(350,290)"/>
+    <wire from="(170,220)" to="(180,220)"/>
+    <wire from="(170,260)" to="(180,260)"/>
+    <wire from="(210,420)" to="(220,420)"/>
+    <wire from="(250,380)" to="(260,380)"/>
+    <wire from="(290,220)" to="(290,270)"/>
+    <wire from="(200,110)" to="(400,110)"/>
+    <comp lib="0" loc="(60,380)" name="Constant"/>
+    <comp lib="0" loc="(120,130)" name="Clock">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(240,100)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="QC"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="7" loc="(250,370)" name="DIP_7408"/>
+    <comp lib="7" loc="(340,220)" name="DIP_7476"/>
+    <comp lib="0" loc="(200,100)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="QD"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(320,100)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="QA"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="7" loc="(170,220)" name="DIP_7476"/>
+    <comp lib="0" loc="(280,100)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="QB"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+  </circuit>
+</project>

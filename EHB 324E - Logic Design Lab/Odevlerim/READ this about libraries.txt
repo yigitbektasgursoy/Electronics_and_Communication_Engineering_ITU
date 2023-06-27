@@ -1,0 +1,10 @@
+Deney 3'te kullanacağınız 74148 entegresi 7400-lib'de hatalıdır. Bu nedenle verilen 74148_edited2021 entegresini kullanın.
+
+Deney7'de kullanacığınız 7493 entegresi logi7400ic'de hatalıdır. Bu nedenle verilen 7493_edited entegresini kullanın.
+
+
+---------------------------------------------------
+
+For experiment 3: The 74148 IC given in 7400-lib is not working properly. Therefore, use the provided 74148_edited2021 IC.
+
+For experiment 7: The 7493 IC given in logi7400ic  is not working properly. Therefore, use the included 7493_edited.
