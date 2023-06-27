@@ -1,0 +1,37 @@
+* YIGIT BEKTAS GURSOY NO:040180063 HOMEWORK-1
+
+ARRAYSIZE EQU 20
+ARRAY RMB ARRAYSIZE 
+	ORG ARRAY
+	DAT 10, 10, 20, 20, 20, 30, 40, 40, 40, 40, 40, 60, 60, 70, 70, 70, 70, 90, 90, 90
+
+FRARRAYSIZE EQU 40 
+FRARRAY RMB FRARRAYSIZE
+
+
+START
+	LDA B,1	;Counter of frequency
+	LDA SK, ARRAY	; Adress of first element in ARRAY
+	LDA CD, FRARRAY	; Beginning adress of array
+
+DONGU1
+	LDA A, <SK+0>
+	CMP A, <SK+1>	; Compare current data with previous data
+	BNE DONGU2	; If A and B are not equal
+	INC B 	;	Counter = counter+1
+	INC SK	;	Adress = Adress+1
+	BRA DONGU1 
+	 
+DONGU2
+	STA A, <CD>	;Write element
+	INC CD	;Increment adress of frarray
+	STA B, <CD>	;Write frequency
+	INC CD	;Increment adress of frarray
+	LDA B, 1	;Reset frequency counter
+	INC SK	
+	CMP SK, 20	;Stop requirement
+	BEQ DONGU3
+	BRA DONGU1
+
+DONGU3
+	INT

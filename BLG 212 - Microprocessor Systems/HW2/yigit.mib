@@ -1,0 +1,64 @@
+*YIGIT BEKTAS GURSOY
+*040180063
+*HW2
+
+ARRAY1 RMB 10
+	ORG ARRAY1
+	DAT  %00000000, %10000000,%11000000, %11100000, %11110000, %11111000, % 11111100, %11111110, %11111111, %00000000	; ilk durum için index-array iliþkisi kurulacak
+
+
+ 
+START
+	STA %00000000, ÝSKELE.A	; giriþler için sw
+	STA $FF, YÖNLEN.B	; outputun ledlerde gozukmesi icin girdi
+	LDA CD, ARRAY1	;Get initial address of ARRAY1 
+LED1
+
+	LDA B, <ÝSKELE.A>	; sw[7]'nin 1 veya 0 oldugunu kontrol etme durumu 
+	AND B, %10000000	;  sw[7]'nin 1 veya 0 oldugunu kontrol etme durumu (SW[7] FILTRELEME)
+	BNE DURUM1	;  sw[7]'nin 1 veya 0 oldugunu kontrol etme durumu 
+
+	LDA A, <CD>	; Start durumunda tanýmlanan array1'in ilk elemanýndan yakmaya baþlama
+	STA A, ÝSKELE.B	; ledleri yakma komutu
+
+	BSR WAIT	; $FFFF deðerine kadar bekleme ( wait subroutine ) 
+	INC CD	; index degerini arttýrarak array1 dizisini sýrasýyla gezme
+	CMP CD, 9	; 9 elemanlý arrayin 9.elemanýna gelip gelmedigini kontrol etme 
+	BNE LED1	; eger 9.elemanýna geldiyse asagýya donup arrayin en basina doner , gelmediyse kaldýgý yerden birer birer artarak devam eder
+	LDA CD, ARRAY1	; arrayi basa dondurme , initial durumu
+	BRA LED1	; dongunun basina git
+
+LED2
+
+	LDA B, <ÝSKELE.A>	;sw[7]'nin 1 veya 0 oldugunu kontrol etme durumu 
+	AND B, %10000000	;sw[7]'nin 1 veya 0 oldugunu kontrol etme durumu (SW[7] FILTRELEME)
+	BEQ DURUM2	;sw[7]'nin 1 veya 0 oldugunu kontrol etme durumu 
+
+	STA A, ÝSKELE.B	; ledleri yakma komutu
+
+	BSR WAIT	; $FFFF deðerine kadar bekleme ( wait subroutine )
+	LDA A, <ÝSKELE.B>	; yanma durumunu a ya yuklemesi
+	CMP A, %00000000	; A degerinin yanmadýgýný kontrol etme durumu
+	BHI DURUM3	; yanýyorsa durum3'e gecmesi
+	LDA A, %11111111	; A ya tum ledleri yakacak durumu yuklemesý
+	BRA LED2	; donguyu basa alarak surekli bir sekilde yanip sonmesi saglayacak komut
+
+
+DURUM3
+	LDA A, %00000000	; A ya tum ledleri sondurecek durumu yuklemesi
+	BRA LED2	;  donguyu basa alarak surekli bir sekilde yanip sonmesi saglayacak komut
+
+	  	
+WAIT LDA SK, $FFFF	; Slaytlarda olan subroutinde kodundan faydalanarak yazýlan kod
+AZALT 
+	DEC SK	; surekli olarak SK degerini belli degere gelen kadar birer birer azaltma
+	BNE AZALT
+	RTS
+
+DURUM1
+	LDA A, %00000000	; SW[7] = 1 oldugu durumda LED2 loopuna don
+	BRA LED2
+
+DURUM2
+	LDA A, %00000000	; SW[7] = 0 oldugu durumda LED2 loopuna don
+	BRA LED1
